@@ -2,6 +2,14 @@
 
 An interactive map application for exploring hotspots across New Zealand. [Live Demo](https://kiwi-explorer-map.vercel.app/)
 
+## Screenshots
+
+![New Zealand Map View](./screenshots/nz_map_view.png)
+_Map view showing ServiceFoods locations across New Zealand_
+
+![Auckland Map View](./screenshots/auckland_view.png)
+_Detailed view of ServiceFoods locations in Auckland_
+
 ## Features
 
 - Full-screen interactive Google Maps integration
