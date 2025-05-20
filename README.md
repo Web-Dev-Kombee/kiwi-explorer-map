@@ -44,7 +44,7 @@ _Detailed view of ServiceFoods locations in Auckland_
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/Web-Dev-Kombee/kiwi-explorer-map.git
 cd kiwi-explorer-map
 ```
 
