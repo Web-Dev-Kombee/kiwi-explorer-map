@@ -1,85 +1,96 @@
-# Kiwi Explorer: New Zealand Interactive Map
+# 🗺️ Kiwi Explorer: New Zealand Interactive Map
 
-An interactive map application for exploring hotspots across New Zealand. [Live Demo](https://kiwi-explorer-map.vercel.app/)
+An interactive map application for exploring hotspots across New Zealand.  
+Built with **React**, **TypeScript**, and the **Google Maps API**.
 
-## Screenshots
+---
 
-![New Zealand Map View](./screenshots/nz_map_view.png)
-_Map view showing ServiceFoods locations across New Zealand_
+## ✨ Features
 
-![Auckland Map View](./screenshots/auckland_view.png)
-_Detailed view of ServiceFoods locations in Auckland_
+- **Interactive Maps**: Full-screen Google Maps integration
+- **Custom Markers**: Unique markers for New Zealand hotspots
+- **Location Details**: Detailed information panels for each location
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Location Selector**: Easily find and navigate to specific locations
+- **Animated UI**: Smooth transitions and modern interface elements
+- **Street View**: Integrated for supported locations
+- **Boundary Control**: Maps restricted to New Zealand
+- **Error Handling**: User-friendly notifications
 
-## Features
+---
 
-- Full-screen interactive Google Maps integration
-- Custom markers for New Zealand hotspots
-- Detailed information panels for each location
-- Responsive design that works on desktop, tablet, and mobile
-- Location selector dropdown
-- Animated transitions and UI elements
-- Street View integration for selected locations
-- Custom marker icons with selection highlighting
-- Bounds restriction to New Zealand
-- Error handling and user notifications
+## 🚀 Getting Started
 
-## Tech Stack
-
-- React.js with TypeScript
-- Next.js for server-side rendering
-- Google Maps JavaScript API
-- Tailwind CSS for styling
-- React Google Maps API (@react-google-maps/api)
-
-## Getting Started
-
-### Prerequisites
+### 1. **Prerequisites**
 
 - Node.js (v14 or later)
 - npm or yarn package manager
 - Google Maps JavaScript API key
 
-### Installation
-
-1. Clone the repository:
+### 2. **Installation**
 
 ```bash
 git clone https://github.com/Web-Dev-Kombee/kiwi-explorer-map.git
 cd kiwi-explorer-map
 ```
 
-2. Install dependencies:
+### 3. **Setup**
 
 ```bash
-npm install
+pnpm install
 ```
 
-3. Configure your Google Maps API key:
+### 4. **Configure Google Maps API**
 
-   - Open `src/config/env.ts`
-   - Replace `YOUR_GOOGLE_MAPS_API_KEY` with your actual Google Maps API key
+- Open `src/config/env.ts`
+- Replace `YOUR_GOOGLE_MAPS_API_KEY` with your actual Google Maps API key
 
-4. Start the development server:
+### 5. **Launch Development Server**
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
-5. Open your browser and navigate to `http://localhost:8080`
+### 6. **View the App**
 
-## Project Structure
+- Open your browser and navigate to `http://localhost:8080`
 
-- `src/components/KiwiExplorer.tsx` - Main component that orchestrates the application
-- `src/components/MapComponent.tsx` - Handles the Google Maps integration and Street View
-- `src/components/InfoPanel.tsx` - Displays information about selected hotspots
-- `src/components/HotspotSelector.tsx` - Dropdown for selecting hotspots
-- `src/data/hotspots.ts` - Contains the static data for all hotspots
-- `src/config/env.ts` - Environment configuration including the Google Maps API key
-- `src/hooks/use-toast.ts` - Custom hook for displaying notifications
+---
 
-## Features in Detail
+## 🛠️ Tech Stack
 
-### Map Features
+- **React.js** with TypeScript
+- **Next.js** for server-side rendering
+- **Google Maps JavaScript API**
+- **Tailwind CSS** for styling
+- **React Google Maps API** (@react-google-maps/api)
+
+---
+
+## 📁 Project Structure
+
+```
+kiwi-explorer-map/
+├── src/
+│   ├── components/
+│   │   ├── KiwiExplorer.tsx      # Main application component
+│   │   ├── MapComponent.tsx      # Google Maps integration
+│   │   ├── InfoPanel.tsx         # Location information display
+│   │   └── HotspotSelector.tsx   # Location selector dropdown
+│   ├── data/
+│   │   └── hotspots.ts           # Location data
+│   ├── config/
+│   │   └── env.ts                # Environment configuration
+│   └── hooks/
+│       └── use-toast.ts          # Notification system
+└── ... (project configuration files)
+```
+
+---
+
+## 🧩 Features in Detail
+
+### 🗺️ Map Features
 
 - Interactive Google Maps integration
 - Custom marker icons with selection highlighting
@@ -87,7 +98,7 @@ npm run dev
 - Street View integration for supported locations
 - New Zealand bounds restriction
 
-### UI Features
+### 🎨 UI Features
 
 - Responsive design for all screen sizes
 - Animated transitions for smooth user experience
@@ -95,9 +106,11 @@ npm run dev
 - Location selector with search functionality
 - Detailed information panels for selected locations
 
-## Adding More Hotspots
+---
 
-To add more hotspots to the map, edit the `src/data/hotspots.ts` file and add new entries following the existing format:
+## 📍 Adding More Hotspots
+
+To add more hotspots to the map, edit the `src/data/hotspots.ts` file:
 
 ```typescript
 {
@@ -109,20 +122,66 @@ To add more hotspots to the map, edit the `src/data/hotspots.ts` file and add ne
 }
 ```
 
-## Obtaining a Google Maps API Key
+---
 
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
+## 🔑 Obtaining a Google Maps API Key
+
+1. Visit the [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project or select an existing one
 3. Navigate to the "APIs & Services > Dashboard" section
 4. Click "+ ENABLE APIS AND SERVICES" and search for "Maps JavaScript API"
 5. Enable the Maps JavaScript API
 6. Create credentials to get your API key
-7. Make sure to restrict the API key to your domain for security
+7. Restrict the API key to your domain for security
 
-## Contributing
+---
 
-Feel free to submit issues and enhancement requests!
+## 📸 Screenshots
 
-## License
+### 🗺️ New Zealand Map View
+
+![New Zealand Map View](./screenshots/nz_map_view.png)
+_Map view showing ServiceFoods locations across New Zealand_
+
+### 🏙️ Auckland Region View
+
+![Auckland Map View](./screenshots/auckland_view.png)
+_Detailed view of ServiceFoods locations in Auckland_
+
+---
+
+## 🌐 Live Demo
+
+Experience the application live: [Kiwi Explorer Map](https://kiwi-explorer-map.vercel.app/)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Feel free to submit issues and enhancement requests!
+
+1. Fork the repository
+2. Create a new branch for your feature/fix
+3. Commit changes and open a Pull Request
+
+---
+
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+---
+
+## 👨‍💻 Authors
+
+**Kombee Technologies**
+
+- 🌐 [Portfolio](https://github.com/kombee-technologies)
+- 🌍 [Website](https://www.kombee.com/)
+- 💼 [LinkedIn](https://in.linkedin.com/company/kombee-global)
+
+---
+
+<p align="center">
+  Built with ❤️ using React and Google Maps
+</p>
